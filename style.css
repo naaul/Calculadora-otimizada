@@ -1,0 +1,268 @@
+html{
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#calculadora{
+    background-color: #7858A6;
+    width: 65vh;
+    height: 85%;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border-radius: 30px;
+    border: 1rem solid #7858A6;
+    box-shadow: 3px 3px 14px #000000;
+}
+
+#display{
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #371B58;
+    border-radius: 30px;
+    align-items: center;
+}
+
+#display-text{
+    color: white;
+    font-size: 4.5rem;
+    margin: 0;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+#teclas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    margin: 1rem;
+}
+
+#clear{
+    grid-column: span 2;
+}
+
+button{
+    border-radius: 20px;
+    border: 0;
+    background-color: #371B58;
+    color: white;
+    height: 10vh;
+    box-shadow: 2px 2px 5px #131313;
+}
+
+button:hover{
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+button > h2{
+    font-size: 1.9rem;
+}
+
+.pink{
+    background-color: #ad86e3;
+}
+
+#line{
+    background-color: #ad86e3;
+    width: .2rem;
+    height: 4.6rem;
+    position: absolute;
+    right: 1rem;
+    display: block;
+}
+
+#historico{
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    width: 20%;
+    height: 50%;
+    background-color: #7858A6;
+    bottom: 2.9rem;
+    right: 10rem;
+    border-radius: 30px;
+    box-shadow: 3px 3px 14px #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#ul-historico{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#ul-historico > li{
+    font-size: 2rem;
+    marker: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: poiter;
+}
+
+#ul-historico > li:hover{
+    background-color: #503773;
+}
+
+h3{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: #503773;
+    border-radius: 14px;
+    width: 50vh;
+    height: 4vh;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ad86e3;
+    font-size: 1rem;
+}
+
+#historico-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:575px) {
+    html{
+        background-color: antiquewhite;
+    }
+
+    #display-text{
+        color: white;
+        font-size: 2.6rem;
+        margin: 0;
+        margin-right: 1rem;
+        text-align: right;
+    }
+
+    #teclas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4%;
+        margin: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    #calculadora{
+        background-color: #7858A6;
+        width: 48vh;
+        height: 85%;
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        border-radius: 30px;
+        border: 0.2rem solid #7858A6;
+        box-shadow: 3px 3px 14px #000000;
+    }
+
+    #display{
+        height: 18%;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #371B58;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    #line{
+        background-color: #ad86e3;
+        width: .2rem;
+        height: 2.7rem;
+        position: absolute;
+        right: 1rem;
+        display: block;
+    }
+
+    button{
+        border-radius: 20px;
+        border: 0;
+        background-color: #371B58;
+        color: white;
+        width: 9vh;
+        height: 9vh ;
+        box-shadow: 2px 2px 5px #131313;
+    }
+
+    #clear{
+        width: 100%;
+    }
+
+    button > h2{
+        font-size: 1.3rem;
+    }
+
+    #svg-historico{
+        width: 5vh;
+    }
+
+
+
+
+    #historico{
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: fixed;
+        width: 30vh;
+        height: 50%;
+        background-color: #7858A6;
+        inset: 0;
+        margin: auto;
+        margin-bottom: 15rem;
+        border-radius: 30px;
+        box-shadow: 3px 3px 14px #000000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    #ul-historico{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #ul-historico > li{
+        font-size: 1.5rem;
+        marker: none;
+        text-align: center;
+        padding-left: 0;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+        cursor: poiter;
+    }
+    
+    #ul-historico > li:hover{
+        background-color: #503773;
+    }
+
+    
+}
