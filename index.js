@@ -291,4 +291,5 @@ $("#ul-historico > li").on("click", function(){
     show.push(this.innerText);
     updateScreen();
     $("#historico").css({"display": "none"});
+    historico_is_open = false;
     })
